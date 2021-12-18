@@ -1,0 +1,249 @@
+@import '../base';
+$color-primary: #333399;
+
+.buttonWhats {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background: #009933;
+    width: fit-content;
+    border-radius: 2rem;
+    color: #fff;
+    font-family: $font-avenirBlack;
+    cursor: pointer;
+}
+
+main {
+    .container-one {
+        background-image: url(../../img/bg//pageTwo/bg1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .title {
+            width: 40rem;
+            margin: auto;
+            padding: 10rem 0;
+
+            @media screen and (max-width:520px){
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .container-two {
+        margin-top: -3rem;
+
+        &.two {
+            margin-top: 3rem;
+
+            .container_quemsomos {
+                @media screen and (max-width:540px){
+                    flex-direction: column;
+                }
+
+                .container_quemsomos-left {
+                    width: 46%;
+
+                    @media screen and (max-width:540px){
+                        width: 100%;
+                    }
+                }
+
+                .container_quemsomos-rigth {
+                    width: 50%;
+
+                    @media screen and (max-width:540px){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &.three {
+            .container_quemsomos {
+                flex-direction: row-reverse;
+
+                @media screen and (max-width:540px){
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .container_quemsomos {
+            background: $color-primary;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1020px;
+            margin: auto;
+            border-radius: 1rem;
+
+            @media screen and (max-width:540px){
+                flex-direction: column;
+            }
+
+            .container_quemsomos-left {
+                width: 50%;
+                display: grid;
+
+                @media screen and (max-width:540px){
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .container_quemsomos-rigth {
+                width: 48%;
+
+                @media screen and (max-width:540px){
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+
+                .title {
+                    font-size: 2.75rem;
+                    text-align: left;
+                    margin-top: 0;
+                    margin-bottom: 1.5rem;
+                    color: #fff;
+                }
+
+                .text {
+                    font-size: 1.095rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .container-three {
+        .points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-gap: 25px;
+            margin-top: 4rem;
+    
+            img {
+                width: 100%;
+    
+                @media screen and (max-width:520px){
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .container_points {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        width: 100%;
+    
+        .container_points-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-gap: 25px;
+            grid-gap: 1.75rem;
+            margin-top: 3rem;
+    
+            .container_points-point {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+
+                @media screen and (max-width:520px){
+                    width: 85%;
+                    margin: auto;
+                }
+
+                .subtitle {
+                    color: $color-primary;
+                }
+    
+                .container_points-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $color-primary;
+                    padding: 0.5rem 1rem;
+                    border-radius: 1rem;
+
+                    p {
+                        color: #fff;
+                    }
+    
+                    &.botox {
+                        min-height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width:540px){
+            flex-direction: column;
+        }
+
+        .container-left {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width:540px){
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                color: $color-primary;
+                font-weight: bold;
+                font-size: 1.2rem;
+                max-width: 85%;
+                margin-left: auto;
+
+                @media screen and (max-width:540px){
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .container-rigth {
+            width: 48%;
+
+            @media screen and (max-width:540px){
+                width: 100%;
+            }
+
+            iframe {
+                border: 3px solid $color-primary;
+                height: 50vh;
+        
+                @media screen and (max-width:520px){
+                    height: 40vh;
+                }
+                border: 3px solid $color-primary;
+            }
+        }
+    }
+}

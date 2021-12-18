@@ -1,0 +1,56 @@
+//COLOR START
+    $color-primary: #efd4b2;
+    $color-secondary: #000;
+//COLOR END
+
+//FONTS START
+    //FONTS FAMILY START
+        @font-face {
+            font-family: 'avenirBlack';
+            src: url(../../fonts/Avenir-Black.otf);
+        }
+        @font-face {
+            font-family: 'avenirMedium';
+            src: url(../../fonts/Avenir-Medium.otf);
+        }
+
+        $font-avenirBlack: 'avenirBlack', sans-serif;
+        $font-avenirMedium: 'avenirMedium', sans-serif;
+    //FONTS FAMILY END
+
+    .title {
+        font-family: $font-avenirBlack;
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+
+        @media screen and (max-width:520px){
+            font-size: 2.75rem;
+        }
+    }
+
+    .subtitle {
+        font-family: $font-avenirMedium;
+        font-size: 2.5rem;
+
+        @media screen and (max-width:520px){
+            font-size: 2.25rem;
+        }
+    }
+
+    .text {
+        font-family: $font-avenirMedium;
+        font-size: 1rem;
+    }
+//FONTS END
+
+//VARIABLES START
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+//VARIABLES END
